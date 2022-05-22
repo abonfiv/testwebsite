@@ -3,6 +3,4 @@ on: [ push, pull_request ]
 jobs:
   vercel:
     runs-on: ubuntu-latest
-    steps:
-	
-              run: git pull
+    run: git pull
