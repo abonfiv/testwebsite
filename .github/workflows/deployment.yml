@@ -1,6 +1,21 @@
+<<<<<<< HEAD
+name: deploy html
+
+on:
+    push:
+        branches: [main, develop]
+    jobs:
+    build:
+        runs-on: ubuntu-latest
+	steps:
+		-uses: actions/checkout@v2
+	with:
+		-run: sudo git pull
+=======
 name: Deploy Torchlight Engine
 on: [ push, pull_request ]
 jobs:
   vercel:
     runs-on: ubuntu-latest
     run: git pull
+>>>>>>> 544269ae85ddfb50ecd4d3c7d255cf4992f4cd9f
