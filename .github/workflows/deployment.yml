@@ -4,5 +4,5 @@ jobs:
   vercel:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: git pull
+	- name: Pull Request
+              run: git pull
